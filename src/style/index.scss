@@ -1,0 +1,14 @@
+@import "./settings.scss";
+
+/*COMPONENTS*/
+@import "./components/keyframes";
+@import "./components/navigation";
+@import "./components/colored-shapes";
+@import "./components/dynamic-title.scss";
+
+
+/*PAGES*/
+@import "./pages/home.scss";
+@import "./pages/about";
+@import "./pages/work.scss";
+@import "./pages/contact";

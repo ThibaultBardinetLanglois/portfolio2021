@@ -1,0 +1,16 @@
+.home-page {
+    width: 100%;
+   .home-page-block {
+       width: 100%;
+       display: flex;
+       margin-left: 5%;
+       align-items: center;
+       @media screen and(max-width: 900px) {
+           margin-left: 0;
+           justify-content: center;
+           width: 100%;
+           height: 100%;
+           margin: auto 0;
+       }
+   }
+}
