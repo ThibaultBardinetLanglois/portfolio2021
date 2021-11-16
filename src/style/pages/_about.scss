@@ -1,6 +1,47 @@
 .about-page {
-    border: 1px solid red;
+    @media screen and (max-width: 900px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .about-page-block {
-        border: 1px solid green;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @media screen and (min-width: 250px) and (max-width: 401px) {
+            margin: 45% auto 10% auto;
+        }
+        @media screen and (min-width: 900px) {
+            width: 70%;
+            margin: 0 auto 0 2%;
+        }
+        @media screen and (min-width: 1150px) {
+            width: 65%;
+            margin-right: 5%;
+        }
+        h2 {
+            span {
+                &:nth-child(3) {
+                    margin-right: 1.6rem;
+                }
+                &:nth-child(9) {
+                    margin-right: 1.6rem;
+                }
+                &:nth-child(12) {
+                    margin-right: 1.6rem;
+                }
+                @media screen and (max-width: 330px) {
+                    &:nth-child(4) {
+                        color: black;
+                    }
+                }
+
+            }
+        }
+        .about-page-paragraphe {
+            margin-bottom: 8rem;
+        }
     }
 }

@@ -1,21 +1,30 @@
 import { useEffect } from "react";
 
+import ScrollPage from "../components/ScrollPage";
 import Navigation  from "../components/Navigation";
+import Shapes from "../components/shapes/Shapes";
 import ScrollArrow from '../components/ScrollArrow';
+import SocialNetworks from "../components/SocialNetworks";
 
-import { animBurgerMenu } from "../utilities/animations";
+import { animOthersTitle, animBottomArrow, animTopArrow, animBurgerMenu } from '../utilities/animations';
 
 const Work = () => {
     useEffect(() => {
+        
+        animOthersTitle();
+        animBottomArrow();
+        animTopArrow();
         animBurgerMenu();
     }, [])
 
 
     return(
         <div className="work-page page-content">
+            <ScrollPage />
+            <Shapes />
             <Navigation />
             <div className="work-page-block">
-                <h2>
+                <h2 className="colored-title">
                     <span className="colored-letter letter-red">H</span>
                     <span>e</span>
                     <span>r</span>
@@ -31,6 +40,7 @@ const Work = () => {
                 </h2>
             </div>
             <ScrollArrow top={"/about"} bottom={"/contact"} />
+            <SocialNetworks />
         </div>
     )
 }

@@ -1,5 +1,6 @@
 .navigation {
     margin: 0 2.4rem;
+    width: 15%;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -15,22 +16,35 @@
         justify-content: center;
         align-items: center;
         z-index: 99;
-        background: linear-gradient(
-        to left bottom, 
-        $redColor, 
-        $yellowColor);
-        clip-path: circle(100px at 50% -14%);
-        -webkit-clip-path: circle(100px at 50% -14%);
+        background-color: rgba(142, 187, 230, 0.959);
+        clip-path: circle(100px at 50% -50%);
+        -webkit-clip-path: circle(100px at 50% -50%);
         transition: all 0.6s ease-out;
+        ul {
+            color: #fff;
+            .nav-active {
+                color: $redColor !important;
+            }
+            a {
+                font-size: 2.4rem !important;
+                text-align: center;
+                color: white !important;
+            }
+        }
         &.change {
-            clip-path: circle(1400px at 100% 0%);
-            -webkit-clip-path: circle(1400px at 100% 0%);
+            clip-path: circle(300% at 100% 0%);
+            -webkit-clip-path: circle(300% at 100% 0%);
         }
     }
     ul {
         display: flex;
         flex-direction: column;
         list-style-type: none;
+        &:hover {
+            a:not(:hover) {
+                opacity: 0.5;
+            }
+        }
         a {
             font-size: 2.4rem;
             font-weight: 300;
@@ -45,6 +59,13 @@
         }
         .nav-active {
             color: $redColor;
+        }
+    }
+    @media screen and (min-width: 901px) and  (max-width: 1200px) {
+        ul {
+            a {
+                font-size: 2rem;
+            }
         }
     }
 }

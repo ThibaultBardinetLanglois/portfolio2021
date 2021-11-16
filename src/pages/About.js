@@ -1,22 +1,31 @@
 import { useEffect } from 'react';
 
-import { animBurgerMenu } from "../utilities/animations";
+import { animOthersTitle, animBottomArrow, animTopArrow, animBurgerMenu } from '../utilities/animations';
 
+import ScrollPage from "../components/ScrollPage";
 import Navigation  from "../components/Navigation";
+import Shapes from "../components/shapes/Shapes";
 import ScrollArrow from '../components/ScrollArrow';
 import SocialNetworks from "../components/SocialNetworks";
 
 const About = () => {
+
     useEffect(() => {
+        animBottomArrow();
+        animTopArrow();
+        animOthersTitle();
         animBurgerMenu();
-    }, [])
+      }, []);
+
     
   
     return (
         <div className="about-page  page-content">
+            <ScrollPage />
+            <Shapes />
             <Navigation />
             <div className="about-page-block">
-                <h2>
+                <h2 className="colored-title">
                     <span className="colored-letter letter-red" >M</span>
                     <span>e</span>
                     <span>,</span>
