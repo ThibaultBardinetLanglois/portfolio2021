@@ -265,13 +265,8 @@ export const projectsListAppear = () => {
 /*Color project-details background*/
 
 export const projectDetailsBackground = () => {
-    const colors = ["rgba(239, 72, 82, 0.93)", "rgba(92, 193, 164, 0.93)", "rgba(255, 201, 6, 0.93)"];
+    const colors = ["rgba(239, 72, 82, 0.93)", "rgba(92, 193, 164, 0.93)"];
     const projectDetails = document.querySelector(".project-details");
     let randomColor = colors[Math.floor(Math.random() * colors.length)];
     projectDetails.style.background = randomColor; 
-    if(randomColor === "rgba(255, 201, 6, 0.93)") {
-        projectDetails.style.color = "black";
-    } else {
-        projectDetails.style.color = "white";
-    }
 }

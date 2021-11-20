@@ -62,7 +62,10 @@ const Slider = (props) => {
                 <SliderButtons moveSlide={prevSlide} direction={"prev"}/>
             </div>
             <p className="pages-count">{slideAnim.index} / {projectsData[id].imagesGallery.length}</p>
-            <p className="project-description">{projectsData[id].infos.length > 1 ? projectsData[id].infos[slideAnim.index - 1] : projectsData[id].infos[0]}</p>
+            <div className="project-description-div">
+                <p className="project-description">{projectsData[id].infos.length > 1 ? projectsData[id].infos[slideAnim.index - 1] : projectsData[id].infos[0]}</p>
+            </div>
+            
         </div>
     )
 }

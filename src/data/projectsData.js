@@ -7,7 +7,7 @@ export const projectsData = [
         languages: "Php, Twig, CSS3",
         frameworks: "Symfony",
         infos: [
-            "Project produced as a team for a real client at the end of training, with the building environment as a theme. The objective is to allow the Ingescop cooperative to be digitally visible. The site allows the cooperative to connect with individuals who are looking for a service such as plumbing, roofing, advice. Unfortunately the project was not deployed because the cooperative has dissolved.",
+            "Project produced as a team for a real client during training, with the building environment as a theme. The objective is to allow the Ingescop cooperative to be digitally visible. Unfortunately the project was not deployed because the cooperative has dissolved.",
             "All visitors can consult the list of professionals working in the cooperative. The frames surrounding the photos change shapes randomly, according to the customer's request, this theme will come back to other pages.",
             "The detailed file of each visitor is available for consultation.",
             "All the services offered by the professionals of the cooperative can be consulted. These are placed randomly each time the page is loaded, with a colored border which group them by category of service.",
