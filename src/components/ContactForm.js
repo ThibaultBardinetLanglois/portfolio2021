@@ -91,7 +91,6 @@ const ContactForm = () => {
                 )
                 .then(
                     () => {
-                        let mediaQuery = window.matchMedia("(min-width: 900px)");
                         formMessageInfo.style.animation = "none";
                         formMessageInfo.style.animation = "hithere 0.8s ease";
                         formMessageInfo.innerHTML = "Message send!\n I'll contact you soon!";

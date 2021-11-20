@@ -100,23 +100,23 @@ export const animColoredLetters = () => {
 /*ANIM BLACK LETTERS ON HOVER IN HOME TITLE*/
 export const animBlackLetters = () => {
     let blackLetters = document.querySelectorAll("#letter");
-    /* const colors = ["#EF4852", "#5CC1A5", "#FFC906"]; */
+    const colors = ["#EF4852", "#5CC1A5", "#FFC906"]; 
 
     function blackLettersAnimation() {
         blackLetters.forEach(letter => {
-            /* let originalColor = letter.style.color; */
+            let originalColor = letter.style.color; 
             letter.addEventListener("mouseover", () => {
-                /* let randomColor = colors[Math.floor(Math.random() * colors.length)];
-                letter.style.color = randomColor; */
+                let randomColor = colors[Math.floor(Math.random() * colors.length)];
+                letter.style.color = randomColor; 
                 letter.style.animation ="none";
                 letter.style.animation = `gelatine  0.8s ease-in forwards`;
             });
-            /* letter.addEventListener("mouseleave", () => {
+            letter.addEventListener("mouseleave", () => {
                 setTimeout(() => {
                     letter.style.color = originalColor;
                 }, 2000)
                 
-            }); */
+            }); 
             letter.addEventListener("animationend", () => {
                 letter.style.animation = "none";
             })
@@ -240,4 +240,38 @@ export const animOthersTitle = () => {
     }
     let writeCharInterval = setInterval(writeChar, 150);
     animBlackLetters();
+}
+
+/*ANIM PROJECTS APPEAR*/
+
+export const rotateProjectGallery = () => {
+    let galleryContainer = document.querySelector('.projects-container');
+        let figures = document.querySelectorAll('.projects-container figure');
+        figures.forEach((figure, index) => {
+            figure.addEventListener("click", () => {
+                galleryContainer.style.transform = `rotateX(-15deg) rotateY(-${index * 60}deg)`;
+            })
+            
+        })
+}
+
+export const projectsListAppear = () => {
+    const mobileProjects = document.querySelectorAll(".mobile-project-container");
+    mobileProjects.forEach((project, index) => {
+        project.style.animation = `appear 1s ease ${0.2 * index}s forwards`;
+    })
+}
+
+/*Color project-details background*/
+
+export const projectDetailsBackground = () => {
+    const colors = ["rgba(239, 72, 82, 0.93)", "rgba(92, 193, 164, 0.93)", "rgba(255, 201, 6, 0.93)"];
+    const projectDetails = document.querySelector(".project-details");
+    let randomColor = colors[Math.floor(Math.random() * colors.length)];
+    projectDetails.style.background = randomColor; 
+    if(randomColor === "rgba(255, 201, 6, 0.93)") {
+        projectDetails.style.color = "black";
+    } else {
+        projectDetails.style.color = "white";
+    }
 }

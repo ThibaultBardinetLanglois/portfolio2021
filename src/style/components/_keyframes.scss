@@ -250,7 +250,7 @@
 }
 
 @keyframes bottomAppear {
-  0% {opacity: 0; transform: translateY(-5.6rem)}
+  0% {opacity: 0; transform: translateY(5.6rem)}
   100% {opacity: 1; transform: translateY(0rem)}
 }
   
@@ -275,3 +275,79 @@
     transform: translate(-40px, 40px);
   }
 }
+
+
+@keyframes rotate {
+  0% {transform: perspective(1000px) rotateY(0deg) rotateX(-15deg) scale(0)}
+  100% {transform: perspective(1000px) rotateY(720deg) rotateX(-15deg) scale(1)}
+}
+
+/*for details project*/
+@keyframes grow {
+  0% {
+    clip-path: circle(0% at 50% -50%);
+    -webkit-clip-path: circle(0% at 50% -50%);
+    clip-path: circle(0%);
+  }
+  100% {
+    clip-path: circle(300% at 50% -50%);
+      -webkit-clip-path: circle(300% at 50% 50%);
+  }
+}
+
+@keyframes shrink {
+  0% {
+    clip-path: circle(300% at 50% -50%);
+      -webkit-clip-path: circle(300% at 50% 50%);
+  }
+  100% {
+    clip-path: circle(0% at 50% -50%);
+    -webkit-clip-path: circle(0% at 50% 50%);
+    clip-path: circle(0%);
+  }
+}
+
+/*project-details-links anim border*/
+
+@keyframes animBeforeBorder {
+  0% {
+    width: 0;
+    height: 0;
+    border-top: 2px solid white;
+
+  }
+  50% {
+    width: 100%;
+    height: 0;
+    border-top: 2px solid white;
+    border-right: 5px solid white;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid white;
+    border-right: 5px solid white;
+  }
+}
+
+@keyframes animAfterBorder {
+  0% {
+    width: 0;
+    height: 0;
+    border-bottom: 2px solid white;
+
+  }
+  50% {
+    width: 100%;
+    height: 0;
+    border-bottom: 2px solid white;
+    border-left: 5px solid white;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid white;
+    border-left: 5px solid white;
+  }
+}
+

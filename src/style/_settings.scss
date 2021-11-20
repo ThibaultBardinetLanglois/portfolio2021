@@ -3,6 +3,10 @@ $greenColor: #5CC1A5;
 $yellowColor: #FFC906;
 $blueColor: #8EBCE6;
 
+/* $redColor: rgba(239, 72, 82, 0.8);
+$greenColor: rgba(92, 193, 164, 0.8);
+$yellowColor: rgba(255, 201, 6, 0.8); */
+
 * {
     margin: 0;
     padding: 0;
@@ -240,8 +244,6 @@ p {
     animation: scrollButtonAppear 1s ease 1s forwards;
     @media screen and (max-width: 900px) {
         left: 47%;
-    }
-    @media screen and (max-width: 600px) {
         display: none;
     }
     a {
