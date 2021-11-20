@@ -134,13 +134,11 @@ export const animTopArrow = () => {
     const topArrow = document.querySelector("#scroll-top");
 
     function shakeTopArrow() {
-        setInterval(() => {
+        topArrow.style.animation = "none";
+        topArrow.style.animation = "shakeToTop 1.5s ease forwards";
+        topArrow.addEventListener("animationend", () => {
             topArrow.style.animation = "none";
-            topArrow.style.animation = "shakeToTop 1.5s ease forwards";
-            topArrow.addEventListener("animationend", () => {
-                topArrow.style.animation = "none";
-            });
-        }, 10000);
+        });
     }
 
     setTimeout(shakeTopArrow, 5000); 
@@ -152,14 +150,11 @@ export const animBottomArrow = () => {
     const downArrow = document.querySelector("#scroll-bottom");
 
     function shakeDownArrow() {
-        setInterval(() => {
             downArrow.style.animation = "none";
             downArrow.style.animation = "shakeToBottom 1.5s ease forwards";
             downArrow.addEventListener("animationend", () => {
                 downArrow.style.animation = "none";
             });
-
-        }, 10000);
     }
 
     setTimeout(shakeDownArrow, 5000);
@@ -251,15 +246,7 @@ export const rotateProjectGallery = () => {
             figure.addEventListener("click", () => {
                 galleryContainer.style.transform = `rotateX(-15deg) rotateY(-${index * 60}deg)`;
             })
-            
         })
-}
-
-export const projectsListAppear = () => {
-    const mobileProjects = document.querySelectorAll(".mobile-project-container");
-    mobileProjects.forEach((project, index) => {
-        project.style.animation = `appear 1s ease ${0.2 * index}s forwards`;
-    })
 }
 
 /*Color project-details background*/
@@ -269,4 +256,40 @@ export const projectDetailsBackground = () => {
     const projectDetails = document.querySelector(".project-details");
     let randomColor = colors[Math.floor(Math.random() * colors.length)];
     projectDetails.style.background = randomColor; 
+}
+
+/*/*ANIM PROJECTS APPEAR ON SCROLL*/
+
+export const appearOnPageLoading = () => {
+    const mobileProjects = document.querySelectorAll(".mobile-project-container");
+    
+    mobileProjects[0].style.animation = "mobileProjectAppear 0.7s ease forwards";
+    mobileProjects[1].style.animation = "mobileProjectAppear 0.7s ease 0.4s forwards";
+}
+
+export const handleScroll = () => {
+    let scrollY = window.scrollY;
+    let windowHeight = window.innerHeight;
+    let documentHeight = document.body.offsetHeight;
+
+    let scrollValue = ((scrollY + windowHeight) / documentHeight) * 100;
+
+    const mobileProjects = document.querySelectorAll(".mobile-project-container");
+    
+    if (scrollValue >= 45) {
+        if(!mobileProjects[2]) return;
+        mobileProjects[2].style.animation = "mobileProjectAppear 0.7s ease forwards";
+    } 
+    if (scrollValue >= 57) {
+        if(!mobileProjects[3]) return;
+        mobileProjects[3].style.animation = "mobileProjectAppear 0.7s ease forwards";
+    }
+    if (scrollValue >= 73) {
+        if(!mobileProjects[4]) return;
+        mobileProjects[4].style.animation = "mobileProjectAppear 0.7s ease forwards";
+    }
+    if (scrollValue >= 87) {
+        if(!mobileProjects[5]) return;
+        mobileProjects[5].style.animation = "mobileProjectAppear 0.7s ease forwards";
+    }
 }

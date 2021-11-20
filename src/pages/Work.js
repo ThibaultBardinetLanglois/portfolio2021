@@ -12,7 +12,7 @@ import Project from "../components/project/Project";
 import MobileProject from "../components/project/MobileProject";
 import ProjectDetails from "../components/project/ProjectDetails";
 
-import { animOthersTitle, animBottomArrow, animTopArrow, animBurgerMenu, rotateProjectGallery, projectsListAppear, projectDetailsBackground } from '../utilities/animations';
+import { animOthersTitle, animBottomArrow, animTopArrow, animBurgerMenu, rotateProjectGallery, projectDetailsBackground, appearOnPageLoading, handleScroll } from '../utilities/animations';
 
 const Work = () => {
     const matchedMobile = useReactSimpleMatchMedia('(max-width: 600px)');
@@ -25,15 +25,22 @@ const Work = () => {
         animTopArrow();
         animBurgerMenu();
         rotateProjectGallery();
-
+    
         if(matchedMobile) {
-            projectsListAppear();
+            appearOnPageLoading();
+            window.addEventListener("scroll", handleScroll);
+        }
+        if(!matchedMobile) {
+            window.removeEventListener("scroll", handleScroll);
         }
 
         if(projectId) {
             projectDetailsBackground();
         }
         
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        }
         
     }, [matched, matchedMobile, projectId])
 

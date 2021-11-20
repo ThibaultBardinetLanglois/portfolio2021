@@ -1,3 +1,60 @@
+/*LOADER*/
+@keyframes shapeLoaderAnimation {
+  0% {
+      top: 25%;
+      left: 37.5%;
+      opacity: 0;
+      transform: scale(0.7) rotateZ(0deg);
+  }
+  33% {
+      top: 50%;
+      left: 37.5%;
+      opacity: 1;
+      transform: scale(0.8) rotateZ(360deg);
+  }
+  76% {
+      top: 50%;
+      left: 62.5%;
+      transform: scale(0.8) rotate(1080deg);
+      opacity: 1;
+  }
+  100% {
+      top: 75%;
+      left: 62.5%;
+      opacity: 0;
+      transform: scale(0.8) rotate(1440deg);
+  }
+
+}
+
+@keyframes shapeMobileLoaderAnimation {
+  0% {
+      top: 25%;
+      left: 25%;
+      opacity: 0;
+      transform: scale(0.7) rotateZ(0deg);
+  }
+  33% {
+      top: 50%;
+      left: 25%;
+      opacity: 1;
+      transform: scale(0.8) rotateZ(360deg);
+  }
+  76% {
+      top: 50%;
+      left: 75%;
+      transform: scale(0.8) rotate(1080deg);
+      opacity: 1;
+  }
+  100% {
+      top: 75%;
+      left: 75%;
+      opacity: 0;
+      transform: scale(0.8) rotate(1440deg);
+  }
+
+}
+
 /*ANIMATIONS*/
 @keyframes wiggle {
     0%, 7% {
@@ -348,6 +405,30 @@
     height: 100%;
     border-bottom: 2px solid white;
     border-left: 5px solid white;
+  }
+}
+
+@keyframes mobileProjectAppear {
+  
+  0% {
+    opacity: 0;
+    transform: perspective(1000px) translateZ(0px) rotateY(180deg) scale(0.2) translateX(-10rem);
+    animation-timing-function: ease-out;
+}
+  100% {
+    opacity: 1;
+    transform: perspective(1000px) translateX(0rem) rotateY(360deg) scale(1) translateX(0rem);
+  }
+}
+
+@keyframes projectAppearRight {
+  0% {
+    opacity: 0;
+    transform: translateX(4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem);
   }
 }
 
