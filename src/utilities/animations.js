@@ -262,7 +262,6 @@ export const projectDetailsBackground = () => {
 
 export const appearOnPageLoading = () => {
     const mobileProjects = document.querySelectorAll(".mobile-project-container");
-    
     mobileProjects[0].style.animation = "mobileProjectAppear 0.7s ease forwards";
     mobileProjects[1].style.animation = "mobileProjectAppear 0.7s ease 0.4s forwards";
 }
@@ -278,18 +277,27 @@ export const handleScroll = () => {
     
     if (scrollValue >= 45) {
         if(!mobileProjects[2]) return;
-        mobileProjects[2].style.animation = "mobileProjectAppear 0.7s ease forwards";
+        if(!mobileProjects[2].style.animation) {
+            mobileProjects[2].style.animation = "mobileProjectAppear 0.7s ease forwards";
+        }
+        
     } 
     if (scrollValue >= 57) {
         if(!mobileProjects[3]) return;
-        mobileProjects[3].style.animation = "mobileProjectAppear 0.7s ease forwards";
+        if(!mobileProjects[3].style.animation) {
+            mobileProjects[3].style.animation = "mobileProjectAppear 0.7s ease forwards";
+        }
     }
     if (scrollValue >= 73) {
         if(!mobileProjects[4]) return;
-        mobileProjects[4].style.animation = "mobileProjectAppear 0.7s ease forwards";
+        if(!mobileProjects[4].style.animation) {
+            mobileProjects[4].style.animation = "mobileProjectAppear 0.7s ease forwards";
+        }
     }
     if (scrollValue >= 87) {
         if(!mobileProjects[5]) return;
-        mobileProjects[5].style.animation = "mobileProjectAppear 0.7s ease forwards";
+        if(!mobileProjects[5].style.animation) {
+            mobileProjects[5].style.animation = "mobileProjectAppear 0.7s ease forwards";
+        }
     }
 }
