@@ -26,8 +26,8 @@ export const projectsData = [
             "To link professionals to the projects in which they have participated, simply check the checkboxes of those desired.",
             "From his dashboard, the administrator can have full visibility on the operations he has already performed. Here he sees all the images he imported for the project he is modifying and can delete them individually."
         ],   
-        img: "./assets/images/ingescop/ingescop1.png",
-        imagesGallery: ["./assets/images/ingescop/ingescop1.png", "./assets/images/ingescop/ingescop2.png", "./assets/images/ingescop/ingescop3.png", "./assets/images/ingescop/ingescop4.png", "./assets/images/ingescop/ingescop5.png", "./assets/images/ingescop/ingescop6.png", "./assets/images/ingescop/ingescop7.png", "./assets/images/ingescop/ingescop8.png", "./assets/images/ingescop/ingescop9.png", "./assets/images/ingescop/ingescop10.png", "./assets/images/ingescop/ingescop11.png", "./assets/images/ingescop/ingescop12.png", "./assets/images/ingescop/ingescop13.png", "./assets/images/ingescop/ingescop14.png", "./assets/images/ingescop/ingescop15.png", "./assets/images/ingescop/ingescop16.png", "./assets/images/ingescop/ingescop17.png", "./assets/images/ingescop/ingescop18.png"],
+        img: "/assets/images/ingescop/ingescop1.png",
+        imagesGallery: ["/assets/images/ingescop/ingescop1.png", "/assets/images/ingescop/ingescop2.png", "/assets/images/ingescop/ingescop3.png", "/assets/images/ingescop/ingescop4.png", "/assets/images/ingescop/ingescop5.png", "/assets/images/ingescop/ingescop6.png", "/assets/images/ingescop/ingescop7.png", "/assets/images/ingescop/ingescop8.png", "/assets/images/ingescop/ingescop9.png", "/assets/images/ingescop/ingescop10.png", ".assets/images/ingescop/ingescop11.png", "/assets/images/ingescop/ingescop12.png", "/assets/images/ingescop/ingescop13.png", "/assets/images/ingescop/ingescop14.png", "/assets/images/ingescop/ingescop15.png", "/assets/images/ingescop/ingescop16.png", "/assets/images/ingescop/ingescop17.png", "/assets/images/ingescop/ingescop18.png"],
         code: "https://github.com/ThibaultBardinetLanglois/Ingescop"
     },
 
@@ -49,8 +49,8 @@ export const projectsData = [
             "The administrator can therefore see all the content posted by a user, modify it and delete it as he wishes, which may seem radical, but he is the administrator."
 
         ],
-        img: "./assets/images/globe-trotter/globe-trotter0.png",
-        imagesGallery: ["./assets/images/globe-trotter/globe-trotter0.png", "./assets/images/globe-trotter/globe-trotter1.png", "./assets/images/globe-trotter/globe-trotter2.png", "./assets/images/globe-trotter/globe-trotter3.png", "./assets/images/globe-trotter/globe-trotter4.png", "./assets/images/globe-trotter/globe-trotter5.png", "./assets/images/globe-trotter/globe-trotter6.png", "./assets/images/globe-trotter/globe-trotter7.png", "./assets/images/globe-trotter/globe-trotter8.png"],
+        img: "/assets/images/globe-trotter/globe-trotter0.png",
+        imagesGallery: ["/assets/images/globe-trotter/globe-trotter0.png", "/assets/images/globe-trotter/globe-trotter1.png", "/assets/images/globe-trotter/globe-trotter2.png", "/assets/images/globe-trotter/globe-trotter3.png", "/assets/images/globe-trotter/globe-trotter4.png", "/assets/images/globe-trotter/globe-trotter5.png", "/assets/images/globe-trotter/globe-trotter6.png", "/assets/images/globe-trotter/globe-trotter7.png", "/assets/images/globe-trotter/globe-trotter8.png"],
         code: "https://github.com/ThibaultBardinetLanglois/Globe-trotter"
     },
 
@@ -63,8 +63,8 @@ export const projectsData = [
         infos: [
             "While learning React I wanted to create a country search system to extract information, thanks to the Api Rest coutries"
         ],
-        img: "./assets/images/countries-api/countries-api.png",
-        imagesGallery: ["./assets/images/countries-api/countries-api.png", "./assets/images/countries-api/countries-api2.png", "./assets/images/countries-api/countries-api3.png"],
+        img: "/assets/images/countries-api/countries-api.png",
+        imagesGallery: ["/assets/images/countries-api/countries-api.png", "/assets/images/countries-api/countries-api2.png", "/assets/images/countries-api/countries-api3.png"],
         link: "https://thibaultbardinetlanglois.github.io/countries-api/",
         code: "https://github.com/ThibaultBardinetLanglois/countries-api"
     },
@@ -78,8 +78,8 @@ export const projectsData = [
         infos: [
             "Create a dynamic resume with React to get used to its architecture and component system."
         ],
-        img: "./assets/images/cv/react-cv2.png",
-        imagesGallery: ["./assets/images/cv/react-cv1.png", "./assets/images/cv/react-cv2.png", "./assets/images/cv/react-cv3.png"],
+        img: "/assets/images/cv/react-cv2.png",
+        imagesGallery: ["/assets/images/cv/react-cv1.png", "/assets/images/cv/react-cv2.png", "/assets/images/cv/react-cv3.png"],
         link: "https://thibaultbardinetlanglois.github.io/React-CV/",
         code: "https://github.com/ThibaultBardinetLanglois/React-CV"
     },
@@ -93,8 +93,8 @@ export const projectsData = [
         infos: [
             "Training project carried out in a group and on the subject of artificial intelligence. Collaboration and learning of git and github to work effectively as a team."
         ],
-        img: "./assets/images/ia/ia.png",
-        imagesGallery: ["./assets/images/ia/ia.png", "./assets/images/ia/ia2.png", "./assets/images/ia/ia3.png", "./assets/images/ia/ia4.png", "./assets/images/ia/ia5.png"],
+        img: "/assets/images/ia/ia.png",
+        imagesGallery: ["/assets/images/ia/ia.png", "/assets/images/ia/ia2.png", "/assets/images/ia/ia3.png", "/assets/images/ia/ia4.png", "/assets/images/ia/ia5.png"],
         link: "https://thibaultbardinetlanglois.github.io/IntelligenceArtificielleProject/",
         code: "https://github.com/ThibaultBardinetLanglois/IntelligenceArtificielleProject"
     },
@@ -107,8 +107,8 @@ export const projectsData = [
         infos: [
             "Project dealing with weather forecasts and using a free API to collect data in real time and display it in the browser when the user enters a city or a country in the search bar."
         ],
-        img: "./assets/images/weather-api/weather-api1.png",
-        imagesGallery: ["./assets/images/weather-api/weather-api1.png", "./assets/images/weather-api/weather-api2.png", "./assets/images/weather-api/weather-api3.png", "./assets/images/weather-api/weather-api4.png"],
+        img: "/assets/images/weather-api/weather-api1.png",
+        imagesGallery: ["/assets/images/weather-api/weather-api1.png", "/assets/images/weather-api/weather-api2.png", "/assets/images/weather-api/weather-api3.png", "/assets/images/weather-api/weather-api4.png"],
         link: "https://thibaultbardinetlanglois.github.io/Weather-app/",
         code: "https://github.com/ThibaultBardinetLanglois/Weather-app"
     },

@@ -54,7 +54,7 @@ const Slider = (props) => {
                         key={index}
                         className={slideAnim.index === index + 1 ? "slide active-anim" : "slide"}
                         >
-                            <img src={image} alt="" />
+                            <img src={process.env.PUBLIC_URL + image} alt="" />
                         </div>
                     )
                 })}

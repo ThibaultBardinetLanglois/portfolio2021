@@ -2,6 +2,7 @@
   "name": "portfolio2021",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ThibaultBardinetLanglois.github.io/portfolio2021",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
@@ -11,6 +12,7 @@
     "@testing-library/user-event": "^12.1.10",
     "email-js": "^2.0.2",
     "emailjs-com": "^3.2.0",
+    "gh-pages": "^3.2.3",
     "node-sass": "^4.14.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -21,6 +23,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "deploy": "npm run build&&gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
