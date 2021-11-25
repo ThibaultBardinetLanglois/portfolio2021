@@ -4,6 +4,7 @@ import About from './pages/About';
 import Work from './pages/Work';
 import Contact from './pages/Contact';
 import Loader from "./components/Loader";
+import ScrollPage from "./components/ScrollPage";
 
 import { Switch, Route, Redirect, useLocation} from 'react-router-dom';
 
@@ -48,6 +49,7 @@ function App() {
         {loading ? <Loader />
         :
         <div>
+          <ScrollPage />
           <div className="burger-menu">
             <div className="top-line line"></div>
             <div className="center-line line"></div>

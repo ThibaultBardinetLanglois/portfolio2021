@@ -13,11 +13,12 @@ const ScrollPage = () => {
         const url = window.location.origin + "/";
 
         /* setTimeout(() => {
-            window.location.href = "about";
-        }, 2000); */
+            window.location.href = url + "about";
+        }, 2000); */ 
 
         const handleSrollLocation = (e) => {
             if(!matchedMobile) return;
+            console.log(e.wheelDeltaY);
             const wheelRouter = (previousPage, nextPage) => {
                 if(e.wheelDeltaY > 0) {
                     setTimeout(() => { 
@@ -30,8 +31,9 @@ const ScrollPage = () => {
                 } 
 
             }
+            console.log(history);
             
-            switch(window.location.href.toString()) {
+            switch(window.location.href) {
                 case url:
                     wheelRouter("", "about");
                     break;
